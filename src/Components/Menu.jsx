@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import MyTube from '../img/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
@@ -84,10 +85,12 @@ const Menu = ({darkMode, setDarkMode}) => {
     return (
         <Container>
         <Wrapper>
+          <Link to="/" style={{textDecoration: "none", color: "inherit"}}>
             <Logo>
               <Img src={MyTube} />
-              LamaTube
+              ShantoTube
             </Logo>
+            </Link>
           <Item>
             <HomeIcon />
             Home
@@ -118,7 +121,7 @@ const Menu = ({darkMode, setDarkMode}) => {
               </Button>
           </Login>
           <Hr />
-          <Title>BEST OF LAMATUBE</Title>
+          <Title>BEST OF Shanto</Title>
           <Item>
             <LibraryMusicOutlinedIcon />
             Music
